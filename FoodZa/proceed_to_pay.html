@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Foods</title>
+		<style>
+		.submitbtn{
+		background-color: green;
+		color: white;
+		padding: 16px 10px;
+		margin: 8px 20px 20px 10px;
+		border-radius: 24px;
+		cursor: pointer;
+		width: 15%; opacity: 0.7; align-content: center;
+		font-family: "verdana";
+		font-weight: bold;
+		-webkit-box-shadow: 0px 6px 0px green;
+		-moz-box-shadow: 0px 6px 0px green;
+		box-shadow: 0px 6px 0px green;
+		-webkit-transition: all .1s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+		-webkit-transform: translate(0, 5px) rotateX(25deg);
+		-moz-transform: translate(0, 4px);
+		transform: translate(0, 4px)
+		}
+		
+		body {
+			background-color: red;
+		}
+		h2{
+		color:white;
+		font-size:40px;
+		}
+		h3{
+		color:white;
+		font-size:20px;
+		}
+		</style
+	</head>
+	<body>
+	<a href="foods1.html"><input type="button" class="submitbtn" value="Back"/></a>
+	<center>
+	<h1 style="color:white;font-size:50px;">Delivery Methods</h1>
+	<hr><hr>
+	
+	<form action="payment_done.php" method="post">
+	<table cellspacing="40">
+	<tr>
+		<td><img src="images/cash_on_del.png" alt="Cash On Delivery" width="150px" height="150px"></td>
+		<td><h2>Cash On Delivery</h2></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list" value="cash_on_delivery"><label></label></td>
+	</tr>
+	
+	</table>
+	<input type="submit" name="submit" class="submitbtn" Value="Done"/>
+	</form>
+
+	
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<title>Foods</title>
+		<style>
+		.submitbtn{
+		background-color: green;
+		color: white;
+		padding: 16px 10px;
+		margin: 8px 20px 20px 10px;
+		border-radius: 24px;
+		cursor: pointer;
+		width: 15%; opacity: 0.7; align-content: center;
+		font-family: "verdana";
+		font-weight: bold;
+		-webkit-box-shadow: 0px 6px 0px green;
+		-moz-box-shadow: 0px 6px 0px green;
+		box-shadow: 0px 6px 0px green;
+		-webkit-transition: all .1s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+		-webkit-transform: translate(0, 5px) rotateX(25deg);
+		-moz-transform: translate(0, 4px);
+		transform: translate(0, 4px)
+		}
+		
+		body {
+			background-color: red;
+		}
+		h2{
+		color:white;
+		font-size:40px;
+		}
+		h3{
+		color:white;
+		font-size:20px;
+		}
+		</style
+	</head>
+	<body>
+	
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myCheck").value;
+		  document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+	<a href="restaurants_user.php"><input type="button" class="submitbtn" value="Back"/></a>
+	<center>
+	<h1 style="color:white;font-size:50px;">Foods List</h1>
+	<hr><hr>
+	<form action="payment.php" method="post">
+	<table cellspacing="40">
+	<tr>
+		<td><img src="images/pizza.jpg" alt="Pizza" width="150px" height="150px"></td>
+		<td><h2>Pizza</h2></td>
+		<td><h3>Price: 200/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Pizza : ₹ 200"><label></label></td>
+
+
+	</tr>
+	<tr>
+		<td><img src="images/cheesepizza.jpg" alt="Cheese Pizza" width="150px" height="150px"></td>
+		<td><h2>Cheese Pizza</h2></td>
+		<td><h3>Price: 250/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Chees pizza : ₹ 250"><label></label></td>
+	</tr>
+	<tr>
+		<td><img src="images/burger.jpg" alt="Burger" width="150px" height="150px"></td>
+		<td><h2>Burger</h2></td>
+		<td><h3>Price: 200/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Burger : ₹ 200"><label></label></td>
+	</tr>
+	<tr>
+		<td><img src="images/Palak_Paneer_Biryani.jpg" alt="Palak Paneer Biryan" width="150px" height="150px"></td>
+		<td><h2>Palak Paneer Biryan</h2></td>
+		<td><h3>Price: 130/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Palak Paneer Biryan : ₹ 130"><label></label></td>
+	</tr>
+	<tr>
+		<td><img src="images/garlic-cheese-toast.jpg" alt="Garlic Cheese Toast" width="150px" height="150px"></td>
+		<td><h2>Garlic Cheese Toast</h2></td>
+		<td><h3>Price: 100/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Garlic Cheese Toast : ₹ 100"><label></label></td>
+	</tr>
+	<tr>
+		<td><img src="images/idly.jpg" alt="Idly" width="150px" height="150px"></td>
+		<td><h2>Idly</h2></td>
+		<td><h3>Price: 40/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Idly : ₹ 40"><label></label></td>
+	</tr>
+	<tr>
+		<td><img src="images/masala dosa.jpg" alt="Masala Dosa" width="150px" height="150px"></td>
+		<td><h2>Masala Dosa</h2></td>
+		<td><h3>Price: 70/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Masala Dosa : ₹ 70"><label></label></td>
+	</tr>
+	<tr>
+		<td><img src="images/sprite.jpg" alt="Sprite" width="150px" height="150px"></td>
+		<td><h2>Sprite</h2></td>
+		<td><h3>Price: 15/-</h3></td>
+		<td><input style="font-size:20px" type="number" min="1" width="20px"  name="check_list[]" placeholder="Quantity"/></td>
+		<td><input style="transform: scale(3);" type="checkbox" name="check_list[]" value="Sprite : ₹ 15"><label></label></td>
+	</tr>
+	
+	
+	
+	</table>
+	<!-- <p id="demo"></p> -->
+	<input type="submit" name="submit" class="submitbtn" Value="Order"/>
+	</center>
+<?php include 'checkbox_value.php';?>
+</form>
+
+	
+	</body>
+</html>
